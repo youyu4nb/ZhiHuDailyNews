@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="?attr/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/nav_icon" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_toRightOf="@id/icon_image"
+        android:text="youyu4"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_image"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_collect"/>
+
+        <TextView
+            android:id="@+id/collects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:text="我的收藏"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_offline_download"/>
+
+        <TextView
+            android:id="@+id/offline_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:text="离线下载"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/mail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/username"-->
+        <!--android:layout_toRightOf="@id/icon_image"-->
+        <!--android:text="youyu4@qq.com"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textSize="14sp" />-->
+
+
+
+</RelativeLayout>
